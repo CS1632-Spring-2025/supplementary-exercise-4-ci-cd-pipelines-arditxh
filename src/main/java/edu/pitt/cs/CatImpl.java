@@ -2,42 +2,50 @@ package edu.pitt.cs;
 
 public class CatImpl implements Cat {
 
-	// TODO: Fill in with member variables
+	// complete
+	private int id;
+	private String name;
+	private boolean rented = false;
 
 	public CatImpl(int id, String name) {
-		// TODO: Fill in
+		// complete
+		this.id = id;
+		this.name = name;
 	}
 
 	public void rentCat() {
-		// TODO: Fill in
+		// complete
+		rented = true;
 	}
 
 	public void returnCat() {
-		// TODO: Fill in
+		// complete
+		rented = false;
 	}
 
 	public void renameCat(String name) {
-		// TODO: Fill in
+		// complete
+		this.name = name;
 	}
 
 	public String getName() {
-		// TODO: Fill in
-		return "";
+		// complete
+		return name;
 	}
 
 	public int getId() {
-		// TODO: Fill in
-		return 0;
+		// complete
+		return id;
 	}
 
 	public boolean getRented() {
-		// TODO: Fill in
-		return false;
+		// complete
+		return rented;
 	}
 
 	public String toString() {
-		// TODO: Fill in
-		return "";
+		// complete
+		return "ID " + id + ". " + name;
 	}
 
 }
